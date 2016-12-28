@@ -2,7 +2,7 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
-results = pd.read_csv('results.csv', header=0)
+results = pd.read_csv('results_big.csv', header=0)
 sns.set_style("whitegrid")
 grouped = results.groupby("NumProcs")
 means = grouped.mean()
